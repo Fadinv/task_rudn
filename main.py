@@ -180,3 +180,75 @@ def toGrad(rad: float):
 # v2 = int(input("Введите второе число: "))
 #
 # print(multiplication(v1, v2))
+
+
+# task 12
+# Функция расчитывает расстояние между двумя точками по широте и долготе
+# def distance(lat1, lon1, lat2, lon2):
+#     r = 6371
+#     d_lat = toRad(lat2 - lat1)
+#     d_lon = toRad(lon2 - lon1)
+#     a = math.sin(d_lat / 2) * math.sin(d_lat / 2) + math.cos(toRad(lat1)) * math.cos(toRad(lat2))\
+#         * math.sin(d_lon / 2) * math.sin(d_lon / 2)
+#     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+#     d = r * c
+#     return d
+#
+#
+# lat_1 = int(input("Введите широту 1: "))
+# lon_1 = int(input("Введитеpy долготу 1: "))
+# lat_2 = int(input("Введите широту 2: "))
+# lon_2 = int(input("Введите долготу 2: "))
+#
+# print("Расстояние: ", distance(lat_1, lon_1, lat_2, lon_2))
+
+
+# task 20
+# def maximer(a: float, b: float):
+#     if a > b:
+#         return a
+#     else:
+#         return b
+#
+# def evclid_distance(nums1: tuple[float], nums2: tuple[float]):
+#     max_length = maximer(len(nums1), len(nums2))
+#     result = 0
+#
+#     for n in range(max_length):
+#         sum = 0
+#         if len(nums1) > n:
+#             sum += nums1[n]
+#         if len(nums2) > n:
+#             sum -= nums2[n]
+#         result += sum ** 2
+#
+#     return math.sqrt(result)
+#
+#
+# entered_list1 = input("Введите чисел, опеределяющих первый вектор, разделенных пробелом: ").split()
+# entered_list2 = input("Введите чисел, опеределяющих второй вектор, разделенных пробелом: ").split()
+#
+# num_list1 = [int(i) for i in entered_list1]
+# num_list2 = [int(i) for i in entered_list2]
+#
+# print(evclid_distance(num_list1, num_list2))
+
+
+# task 13
+# def area(n: int, a: float):
+#     return n * (a ** 2) / (4 * math.tan(toRad(180 / n)))
+#
+#
+# num = int(input("Введите кол-во сторон (целое число): "))
+# length = int(input("Введите длину стороны: "))
+#
+# print("Площадь многоугольника с кол-вом сторон = " + str(num) + " равно ", area(num, length))
+
+# task 18
+def volume(a: float):
+    return math.sqrt(2) * (a ** 3) / 12
+
+
+num = int(input("Введите длину ребра тетрайдера: "))
+
+print("Объем тетрайдера = " + str(volume(num)))
