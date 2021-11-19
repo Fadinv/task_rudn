@@ -1,4 +1,5 @@
 import math
+import random
 from builtins import float
 
 
@@ -245,10 +246,77 @@ def toGrad(rad: float):
 # print("Площадь многоугольника с кол-вом сторон = " + str(num) + " равно ", area(num, length))
 
 # task 18
-def volume(a: float):
-    return math.sqrt(2) * (a ** 3) / 12
+# def volume(a: float):
+#     return math.sqrt(2) * (a ** 3) / 12
+#
+# num = int(input("Введите длину ребра тетрайдера: "))
+#
+# print("Объем тетрайдера = " + str(volume(num)))
+
+# task 14
+# def format_num(a: float):
+#     return bin(a)[2:]
+#
+# num = int(input("Введите число в десятичном формате: "))
+#
+# print("Двоичное число = " + str(format_num(num)))
+
+# task 16
+# def format_num(a: float):
+#     return round(a, 2)
+#
+#
+# num = float(input("Введите число: "))
+#
+# print("Десятичное число = " + str(format_num(num)))
+
+# task 19
+# def to_hex(a: int):
+#     return hex(a)[2:]
+#
+# num = int(input("Введите число: "))
+#
+# print("hex = " + str(to_hex(num)))
+
+# task 17
+# def throw_up(count: int):
+#     eagles = 0
+#     for i in range(count):
+#         r = random.randint(0, 1)
+#         if r:
+#             eagles += 1
+#     return eagles
+#
+#
+# num = int(input("Введите число: "))
+#
+# print("Орлы = " + str(throw_up(num)))
 
 
-num = int(input("Введите длину ребра тетрайдера: "))
-
-print("Объем тетрайдера = " + str(volume(num)))
+# task 15
+# Преобразовать в полярные координаты
+# def to_polar(x: int, y: int):
+#     r = math.sqrt(abs(x) ** 2 + abs(y) ** 2)
+#     if r == 0:
+#         return 0.0
+#     rad = math.acos(x / r)
+#     deg = toGrad(rad)
+#     if y < 0:
+#         return 360 - deg
+#     return toGrad(rad)
+#
+#
+# coordinates = input("Введите координаты вектора через пробел: ").split()
+#
+# try:
+#     int(coordinates[0])
+#     int(coordinates[1])
+# except IndexError:
+#     print("Некоректное кол-во элементов")
+# except ValueError:
+#     print("Должны быть введены числла")
+# else:
+#     if len(coordinates) == 2:
+#         print(to_polar(int(coordinates[0]), int(coordinates[1])))
+#     else:
+#         print("Некоректное кол-во элементов")
