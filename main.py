@@ -4,27 +4,27 @@ from builtins import float
 
 
 # Функция преобразует градусы в радианы
-def toRad(deg: float):
+def to_rad(deg: float):
     return deg * math.pi / 180
 
 
 # Функция преобразует радианы в градусы
-def toGrad(rad: float):
+def to_grad(rad: float):
     return rad * 180 / math.pi
 
-
-# # task 1
+# Задание 1
 # grad = float(input('Введите градусы: '))
-# print('Радианы: ', toRad(grad))
-#
-# # task 2
+# print('Радианы: ', to_rad(grad))
+
+
+# ЗАДАНИЕ 2
 # radian = float(input('Введите радианы: '))
-# print('Градусы: ', toGrad(radian))
+# print('Градусы: ', to_grad(radian))
 
 
-# task 3
-# Функция расчитывает площадь трапеции по двум сторонам и высоте
-# def calcAreaTrapezoid(a: float, b: float, h: float):
+# ЗАДАНИЕ 3
+# Функция рассчитывает площадь трапеции по двум сторонам и высоте
+# def calc_area_trapezoid(a: float, b: float, h: float):
 #     return a * b * h / 2
 #
 #
@@ -34,13 +34,13 @@ def toGrad(rad: float):
 #
 # h = float(input('Введите высоту трапеции "h": '))
 #
-# print(calcAreaTrapezoid(a, b, h))
+# print(calc_area_trapezoid(a, b, h))
 
 
-# task 4
-# Функция расчитывает площадь трапеции по двум сторонам и высоте
-# def calcAreaTrapezoid(side1: float, side2: float, deg: float):
-#     return math.sin(toRad(deg)) * side1 * side2
+# ЗАДАНИЕ 4
+# Функция рассчитывает площадь трапеции по двум сторонам и высоте
+# def calc_area_trapezoid(side1: float, side2: float, deg: float):
+#     return math.sin(to_rad(deg)) * side1 * side2
 #
 #
 # a = float(input('Введите сторону "a": '))
@@ -49,17 +49,17 @@ def toGrad(rad: float):
 #
 # alfa = float(input('Введите угол у основания трапеции "alfa": '))
 #
-# print(calcAreaTrapezoid(a, b, alfa))
+# print(calc_area_trapezoid(a, b, alfa))
 
 
-# task 5
-# Функция расчитывает площадь поверхности цилиндра по высоте и радиусу
-# def calcAreaCyl(height_cyl: float, radius_cyl: float):
+# ЗАДАНИЕ 5
+# Функция рассчитывает площадь поверхности цилиндра по высоте и радиусу
+# def calc_area_cyl(height_cyl: float, radius_cyl: float):
 #     return 2 * math.pi * radius_cyl * height_cyl + 2 * math.pi * (radius_cyl ** 2)
 #
 #
-# # Функция расчитывает объем цилиндра по высоте и радиусу
-# def calcVolumeCyl(height_cyl: float, radius_cyl: float):
+# # Функция рассчитывает объем цилиндра по высоте и радиусу
+# def calc_volume_cyl(height_cyl: float, radius_cyl: float):
 #     return math.pi * height_cyl * (radius_cyl ** 2)
 #
 #
@@ -67,29 +67,29 @@ def toGrad(rad: float):
 #
 # radius = float(input('Введите радиус цилиндра: '))
 #
-# print('Площадь полной поверхности цилиндра: ', calcAreaCyl(height, radius))
-# print('Объем цилиндра: ', calcVolumeCyl(height, radius))
+# print('Площадь полной поверхности цилиндра: ', calc_area_cyl(height, radius))
+# print('Объем цилиндра: ', calc_volume_cyl(height, radius))
 
 
-# task 6
-# Функция расчитывает объем сферы радиуса r
-# def calcAreaSphere(radius_sphere: float):
+# ЗАДАНИЕ 6
+# Функция рассчитывает объем сферы радиуса r
+# def calc_area_sphere(radius_sphere: float):
 #     return 4 * math.pi * (radius_sphere ** 2)
 #
 #
-# # Функция расчитывает площадь поверхности сферы радиуса r
-# def calcVolumeSphere(radius_sphere: float):
+# # Функция рассчитывает площадь поверхности сферы радиуса r
+# def calc_volume_sphere(radius_sphere: float):
 #     return 4 * math.pi * (radius_sphere ** 2) / 3
 #
 #
 # radius = float(input('Введите радиус сферы: '))
 #
-# print('Площадь поверхности сферы: ', calcAreaSphere(radius))
-# print('Объем сферы: ', calcVolumeSphere(radius))
+# print('Площадь поверхности сферы: ', calc_area_sphere(radius))
+# print('Объем сферы: ', calc_volume_sphere(radius))
 
-# task 7
+# ЗАДАНИЕ 7
 # Функция рассчитывает длину дуги окружности радиуса r и угла дуги deg
-# def calcArcLength(radius_circle: float, deg: float):
+# def calc_arc_length(radius_circle: float, deg: float):
 #     return math.pi * radius_circle * deg / 180
 #
 #
@@ -97,25 +97,25 @@ def toGrad(rad: float):
 #
 # grad = float(input('Введите угол дуги: '))
 #
-# print('Длина дуги: ', calcArcLength(radius, grad))
+# print('Длина дуги: ', calc_arc_length(radius, grad))
 
 
-# task 8
+# ЗАДАНИЕ 8
 # Функция рассчитывает площадь сектора окружности радиуса r и угла дуги deg
-# def calcAreaSector(radius_circle: float, deg: float):
-#     return toRad(deg) * (radius_circle ** 2) / 2
+# def calc_area_sector(radius_circle: float, deg: float):
+#     return to_rad(deg) * (radius_circle ** 2) / 2
 #
 #
 # radius = float(input('Введите радиус окружности: '))
 #
 # grad = float(input('Введите угол дуги: '))
 #
-# print('Площадь сектора: ', calcAreaSector(radius, grad))
+# print('Площадь сектора: ', calc_area_sector(radius, grad))
 
 
-# task 9
+# ЗАДАНИЕ 9
 # Функция принимает число относительно которого расчитываем кратность и остальные аргументы цифры
-# def getFirstMultiple(multiplicity: int, *nums: int):
+# def get_first_multiple(multiplicity: int, *nums: int):
 #     for n in nums:
 #         if n % multiplicity == 0:
 #             return n
@@ -123,18 +123,18 @@ def toGrad(rad: float):
 #     return 'Число кратное ' + str(multiplicity) + ' не найдено'
 #
 #
-# num = int(input('Введите число, относительно которого будет расчитываться кратность: '))
+# num = int(input('Введите число, относительно которого будет рассчитываться кратность: '))
 #
 # entered_list = input("Введите список чисел, разделенных пробелом: ").split()
 #
 # num_list = [int(i) for i in entered_list]
 #
-# print(getFirstMultiple(num, *num_list))
+# print(get_first_multiple(num, *num_list))
 
 
-# task 10
-# Функция расчитывает сумму квадратов n чисел
-# def calcSumOfSquares(*nums: int):
+# ЗАДАНИЕ 10
+# Функция рассчитывает сумму квадратов n чисел
+# def calc_sum_of_squares(*nums: int):
 #     result = 0
 #     for n in nums:
 #         result += n ** 2
@@ -142,8 +142,8 @@ def toGrad(rad: float):
 #     return result
 #
 #
-# # Функция расчитывает квадрат суммы n чисел
-# def calcSquaresOfSum(*nums: int):
+# # Функция рассчитывает квадрат суммы n чисел
+# def calc_squares_of_sum(*nums: int):
 #     result = 0
 #     for n in nums:
 #         result += n
@@ -152,7 +152,7 @@ def toGrad(rad: float):
 #
 #
 # # Функция рассчитывает разницу между квадратом суммы и суммы квадратов первых n чисел
-# def calcDifferenceBetweenNums(num1, num2):
+# def calc_difference_between_nums(num1, num2):
 #     return num1 - num2
 #
 #
@@ -162,11 +162,11 @@ def toGrad(rad: float):
 #
 # print(
 #     'Разница между квадратом суммы и суммы квадратов введенных чисел: ',
-#     calcDifferenceBetweenNums(calcSumOfSquares(*num_list), calcSquaresOfSum(*num_list)),
+#     calc_difference_between_nums(calc_sum_of_squares(*num_list), calc_squares_of_sum(*num_list)),
 # )
 
 
-# task 11
+# ЗАДАНИЕ 11
 # Функция умножает два целых числа без использования оператора "*"
 # def multiplication(value1: int, value2: int):
 #     result: int = 0
@@ -183,13 +183,13 @@ def toGrad(rad: float):
 # print(multiplication(v1, v2))
 
 
-# task 12
-# Функция расчитывает расстояние между двумя точками по широте и долготе
+# ЗАДАНИЕ 12
+# Функция рассчитывает расстояние между двумя точками по широте и долготе
 # def distance(lat1, lon1, lat2, lon2):
 #     r = 6371
-#     d_lat = toRad(lat2 - lat1)
-#     d_lon = toRad(lon2 - lon1)
-#     a = math.sin(d_lat / 2) * math.sin(d_lat / 2) + math.cos(toRad(lat1)) * math.cos(toRad(lat2))\
+#     d_lat = to_rad(lat2 - lat1)
+#     d_lon = to_rad(lon2 - lon1)
+#     a = math.sin(d_lat / 2) * math.sin(d_lat / 2) + math.cos(to_rad(lat1)) * math.cos(to_rad(lat2))\
 #         * math.sin(d_lon / 2) * math.sin(d_lon / 2)
 #     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 #     d = r * c
@@ -197,14 +197,106 @@ def toGrad(rad: float):
 #
 #
 # lat_1 = int(input("Введите широту 1: "))
-# lon_1 = int(input("Введитеpy долготу 1: "))
+# lon_1 = int(input("Введите долготу 1: "))
 # lat_2 = int(input("Введите широту 2: "))
 # lon_2 = int(input("Введите долготу 2: "))
 #
 # print("Расстояние: ", distance(lat_1, lon_1, lat_2, lon_2))
 
 
-# task 20
+# ЗАДАНИЕ 13
+# def area(n: int, a: float):
+#     return n * (a ** 2) / (4 * math.tan(to_rad(180 / n)))
+#
+#
+# num = int(input("Введите кол-во сторон (целое число): "))
+# length = int(input("Введите длину стороны: "))
+#
+# print("Площадь многоугольника с кол-вом сторон = " + str(num) + " равно ", area(num, length))
+
+
+# ЗАДАНИЕ 14
+# def format_num(a: float):
+#     return bin(a)[2:]
+#
+# num = int(input("Введите число в десятичном формате: "))
+#
+# print("Двоичное число = " + str(format_num(num)))
+
+
+# ЗАДАНИЕ 15
+# Преобразовать в полярные координаты
+# def to_polar(x: int, y: int):
+#     r = math.sqrt(abs(x) ** 2 + abs(y) ** 2)
+#     if r == 0:
+#         return 0.0
+#     rad = math.acos(x / r)
+#     deg = to_grad(rad)
+#     if y < 0:
+#         return 360 - deg
+#     return to_grad(rad)
+#
+#
+# coordinates = input("Введите координаты вектора через пробел: ").split()
+#
+# try:
+#     int(coordinates[0])
+#     int(coordinates[1])
+# except IndexError:
+#     print("Некорректное кол-во элементов")
+# except ValueError:
+#     print("Должны быть введены числа")
+# else:
+#     if len(coordinates) == 2:
+#         print(to_polar(int(coordinates[0]), int(coordinates[1])))
+#     else:
+#         print("Некорректное кол-во элементов")
+
+
+# ЗАДАНИЕ 16
+# def format_num(a: float):
+#     return round(a, 2)
+#
+#
+# num = float(input("Введите число: "))
+#
+# print("Десятичное число = " + str(format_num(num)))
+
+
+# ЗАДАНИЕ 17
+# def throw_up(count: int):
+#     eagles = 0
+#     for i in range(count):
+#         r = random.randint(0, 1)
+#         if r:
+#             eagles += 1
+#     return eagles
+#
+#
+# num = int(input("Введите число: "))
+#
+# print("Орлы = " + str(throw_up(num)))
+
+
+# ЗАДАНИЕ 18
+# def volume(a: float):
+#     return math.sqrt(2) * (a ** 3) / 12
+#
+# num = int(input("Введите длину ребра тетрайдера: "))
+#
+# print("Объем тетрайдера = " + str(volume(num)))
+
+
+# ЗАДАНИЕ 19
+# def to_hex(a: int):
+#     return hex(a)[2:]
+#
+# num = int(input("Введите число: "))
+#
+# print("hex = " + str(to_hex(num)))
+
+
+# ЗАДАНИЕ 20
 # def maximer(a: float, b: float):
 #     if a > b:
 #         return a
@@ -226,97 +318,10 @@ def toGrad(rad: float):
 #     return math.sqrt(result)
 #
 #
-# entered_list1 = input("Введите чисел, опеределяющих первый вектор, разделенных пробелом: ").split()
-# entered_list2 = input("Введите чисел, опеределяющих второй вектор, разделенных пробелом: ").split()
+# entered_list1 = input("Введите чисел, определяющих первый вектор, разделенных пробелом: ").split()
+# entered_list2 = input("Введите чисел, определяющих второй вектор, разделенных пробелом: ").split()
 #
 # num_list1 = [int(i) for i in entered_list1]
 # num_list2 = [int(i) for i in entered_list2]
 #
 # print(evclid_distance(num_list1, num_list2))
-
-
-# task 13
-# def area(n: int, a: float):
-#     return n * (a ** 2) / (4 * math.tan(toRad(180 / n)))
-#
-#
-# num = int(input("Введите кол-во сторон (целое число): "))
-# length = int(input("Введите длину стороны: "))
-#
-# print("Площадь многоугольника с кол-вом сторон = " + str(num) + " равно ", area(num, length))
-
-# task 18
-# def volume(a: float):
-#     return math.sqrt(2) * (a ** 3) / 12
-#
-# num = int(input("Введите длину ребра тетрайдера: "))
-#
-# print("Объем тетрайдера = " + str(volume(num)))
-
-# task 14
-# def format_num(a: float):
-#     return bin(a)[2:]
-#
-# num = int(input("Введите число в десятичном формате: "))
-#
-# print("Двоичное число = " + str(format_num(num)))
-
-# task 16
-# def format_num(a: float):
-#     return round(a, 2)
-#
-#
-# num = float(input("Введите число: "))
-#
-# print("Десятичное число = " + str(format_num(num)))
-
-# task 19
-# def to_hex(a: int):
-#     return hex(a)[2:]
-#
-# num = int(input("Введите число: "))
-#
-# print("hex = " + str(to_hex(num)))
-
-# task 17
-# def throw_up(count: int):
-#     eagles = 0
-#     for i in range(count):
-#         r = random.randint(0, 1)
-#         if r:
-#             eagles += 1
-#     return eagles
-#
-#
-# num = int(input("Введите число: "))
-#
-# print("Орлы = " + str(throw_up(num)))
-
-
-# task 15
-# Преобразовать в полярные координаты
-# def to_polar(x: int, y: int):
-#     r = math.sqrt(abs(x) ** 2 + abs(y) ** 2)
-#     if r == 0:
-#         return 0.0
-#     rad = math.acos(x / r)
-#     deg = toGrad(rad)
-#     if y < 0:
-#         return 360 - deg
-#     return toGrad(rad)
-#
-#
-# coordinates = input("Введите координаты вектора через пробел: ").split()
-#
-# try:
-#     int(coordinates[0])
-#     int(coordinates[1])
-# except IndexError:
-#     print("Некоректное кол-во элементов")
-# except ValueError:
-#     print("Должны быть введены числла")
-# else:
-#     if len(coordinates) == 2:
-#         print(to_polar(int(coordinates[0]), int(coordinates[1])))
-#     else:
-#         print("Некоректное кол-во элементов")
