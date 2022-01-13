@@ -12,7 +12,7 @@ def to_rad(deg: float):
 def to_grad(rad: float):
     return rad * 180 / math.pi
 
-# Задание 1
+# ЗАДАНИЕ 1
 # grad = float(input('Введите градусы: '))
 # print('Радианы: ', to_rad(grad))
 
